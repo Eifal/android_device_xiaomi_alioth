@@ -14,6 +14,21 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from alioth device
 $(call inherit-product, device/xiaomi/alioth/device.mk)
 
+# Device Specific Flags
+TARGET_INCLUDE_WIFI_EXT := true
+TARGET_BOOT_ANIMATION_RES := 1440
+
+# Environment Flags
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+TARGET_SUPPORTS_QUICK_TAP  := true
+TARGET_ENABLE_BLUR := true
+
+# Alpha-config
+TARGET_LAUNCHER := 2
+TARGET_BUILD_PACKAGE := 1
+ALPHA_MAINTAINER := Eifal-運命
+
 PRODUCT_NAME := lineage_alioth
 PRODUCT_DEVICE := alioth
 PRODUCT_MANUFACTURER := Xiaomi
