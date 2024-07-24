@@ -30,7 +30,7 @@ PRODUCT_PACKAGES += \
     libpiex_shim
 
 # Miui Camera
-$(call inherit-product-if-exists, vendor/xiaomi/camera/miuicamera.mk)
+$(call inherit-product-if-exists, vendor/xiaomi/miuicamera/config.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
