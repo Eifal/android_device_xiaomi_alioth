@@ -9,7 +9,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/everest/config/common_full_phone.mk)
 
 # Inherit from alioth device
 $(call inherit-product, device/xiaomi/alioth/device.mk)
@@ -24,12 +24,11 @@ TARGET_INCLUDE_LIVE_WALLPAPERS := true
 TARGET_SUPPORTS_QUICK_TAP  := true
 TARGET_ENABLE_BLUR := true
 
-# Alpha-config
-TARGET_LAUNCHER := 2
-TARGET_BUILD_PACKAGE := 1
-ALPHA_MAINTAINER := Eifal-運命
+# Everest flags
+WITH_GAPPS := true
+EVEREST_MAINTAINER := Eifal-運命
 
-PRODUCT_NAME := lineage_alioth
+PRODUCT_NAME := everest_alioth
 PRODUCT_DEVICE := alioth
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := POCO
